@@ -1,0 +1,5 @@
+id,title,category,problem,solution,owner,updated,status,validation
+KB-001,Abnormal vibration on conveyor drive,Equipment,Conveyor vibration exceeds normal operating condition,Check mounting bolts and bearing condition; record vibration reading before restart,Maintenance Team,2026-09-28,Validated,Reviewed by Senior Engineer
+KB-002,Paint surface contamination,Quality,Small foreign particles appear on painted surface,Inspect booth cleanliness and filter condition; isolate affected batch for quality review,Quality Team,2026-09-25,Validated,Reviewed by Quality Supervisor
+KB-003,Sensor calibration after replacement,Process,Workstation sensor readings fluctuate after replacement,Perform calibration using the approved standard procedure and verify against reference gauge,Process Engineering,2026-09-20,Pending,Awaiting senior review
+KB-004,Repeated torque tool alarm,Equipment,Torque tool generates repeated tightening alarms,Verify tool program and socket condition; escalate if torque trace remains outside specification,Production Team,2026-09-18,Validated,Reviewed by Senior Engineer

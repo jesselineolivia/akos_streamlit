@@ -1,0 +1,13 @@
+date,line,workstation,machine_id,variant,output,target,downtime_minutes,oee,source_system
+2026-10-01,Assembly A,Station 01,M-101,Innova Zenix,118,120,18,91.2,MES
+2026-10-01,Assembly A,Station 02,M-102,Innova Zenix,116,120,22,89.5,MES
+2026-10-01,Assembly B,Station 03,M-203,Fortuner,102,105,25,87.8,SCADA
+2026-10-02,Assembly A,Station 01,M-101,Innova Zenix,121,120,12,93.1,MES
+2026-10-02,Assembly A,Station 02,M-102,Innova Zenix,119,120,15,92.4,MES
+2026-10-02,Assembly B,Station 03,M-203,Fortuner,104,105,19,90.2,SCADA
+2026-10-03,Assembly A,Station 01,M-101,Innova Zenix,117,120,20,89.9,MES
+2026-10-03,Assembly A,Station 02,M-102,Innova Zenix,120,120,13,93.8,MES
+2026-10-03,Assembly B,Station 03,M-203,Fortuner,103,105,21,89.6,SCADA
+2026-10-04,Assembly A,Station 01,M-101,Innova Zenix,122,120,10,94.1,MES
+2026-10-04,Assembly A,Station 02,M-102,Innova Zenix,118,120,17,91.7,MES
+2026-10-04,Assembly B,Station 03,M-203,Fortuner,105,105,14,92.0,SCADA

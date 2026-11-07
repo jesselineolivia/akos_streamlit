@@ -1,0 +1,10 @@
+equipment_id,equipment_name,line,station,variant,connectivity,protocol,last_sync
+EQ-001,Fastening Tool 01,Assembly Line 1,Assembly 1,ICE,Online,OPC-UA,2026-11-04 09:10
+EQ-002,Torque Sensor 02,Assembly Line 1,Assembly 1,HEV,Online,OPC-UA,2026-11-04 09:09
+EQ-003,Vision Camera 01,Assembly Line 2,Assembly 2,PHEV,Warning,MQTT,2026-11-04 08:52
+EQ-004,Presence Sensor 04,Assembly Line 2,Assembly 2,HEV,Online,MQTT,2026-11-04 09:08
+EQ-005,Connector Inspection Node,E-Assembly,E-Assembly,BEV,Warning,REST API,2026-11-04 08:50
+EQ-006,Torque Controller 03,E-Assembly,E-Assembly,PHEV,Online,OPC-UA,2026-11-04 09:07
+EQ-007,Trim Inspection Camera,Trim Line,Trim Line,ICE,Online,MQTT,2026-11-04 09:06
+EQ-008,Surface Sensor 02,Trim Line,Trim Line,HEV,Online,OPC-UA,2026-11-04 09:05
+EQ-009,Final Check Station,Final Inspection,Final Inspection,BEV,Online,REST API,2026-11-04 09:04

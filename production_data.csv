@@ -1,0 +1,13 @@
+timestamp,line,station,variant,shift,units,cycle_time_sec,downtime_min,scrap_units
+2026-11-04 07:00,Assembly Line 1,Assembly 1,ICE,A,118,54,12,1
+2026-11-04 07:00,Assembly Line 1,Assembly 1,HEV,A,82,58,8,0
+2026-11-04 07:00,Assembly Line 2,Assembly 2,PHEV,A,64,61,15,1
+2026-11-04 07:00,E-Assembly,E-Assembly,BEV,A,49,67,22,1
+2026-11-04 08:00,Assembly Line 1,Assembly 1,ICE,B,121,53,6,0
+2026-11-04 08:00,Assembly Line 1,Assembly 1,HEV,B,85,57,5,0
+2026-11-04 08:00,Assembly Line 2,Assembly 2,PHEV,B,67,60,9,0
+2026-11-04 08:00,E-Assembly,E-Assembly,BEV,B,51,66,12,0
+2026-11-04 09:00,Trim Line,Trim Line,ICE,A,115,55,7,1
+2026-11-04 09:00,Trim Line,Trim Line,HEV,A,80,59,4,0
+2026-11-04 09:00,E-Assembly,E-Assembly,PHEV,A,62,65,11,0
+2026-11-04 09:00,E-Assembly,E-Assembly,BEV,A,48,68,18,1

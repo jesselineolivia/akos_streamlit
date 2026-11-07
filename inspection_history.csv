@@ -1,0 +1,5 @@
+timestamp,image_name,prediction,confidence,review_status
+2026-10-01 08:15,part_001.jpg,Good,0.982,Approved
+2026-10-01 09:42,part_002.jpg,Surface defect,0.914,Confirmed defect
+2026-10-02 10:05,part_003.jpg,Good,0.967,Approved
+2026-10-03 13:20,part_004.jpg,Review required,0.000,Pending operator review
