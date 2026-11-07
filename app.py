@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 import json
 import io
-
+import gdown
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -12,6 +12,19 @@ from PIL import Image
 
 # Import vision model utilities
 from vision_model import get_model_status, load_classifier, predict_image
+from tensorflow.keras.models import load_model
+file_id = '14h7yv4LUJuxUF5bwnZ2PIrvoPGQEcnKc'
+url = f'https://drive.google.com/uc?id={file_id}'
+model_path = 'resnet50_model.keras'
+
+@st.cache_resource
+def load_my_model():
+    if not os.path.exists(model_path):
+        with st.spinner("Mengunduh model AI."):
+            gdown.download(url, model_path, quiet=False)
+    return load_model(model_path)
+
+model = load_my_model()
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
