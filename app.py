@@ -9,6 +9,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from PIL import Image
+from vision_model import get_model_status, load_classifier, predict_image
 
 # CNN Model Configuration
 ROOT_DIR = Path(__file__).resolve().parent
@@ -16,6 +17,7 @@ MODELS_DIR = ROOT_DIR / "models"
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 MODEL_PATH = MODELS_DIR / "resnet50_model.keras"
 
+model_stat = get_model_status()
 # Google Drive configuration
 MODEL_FILE_ID = "14h7yv4LUJuxUF5bwnZ2PIrvoPGQEcnKc"
 @st.cache_resource
