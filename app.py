@@ -10,21 +10,33 @@ import plotly.express as px
 import streamlit as st
 from PIL import Image
 
-# Import vision model utilities
-from vision_model import get_model_status, load_classifier, predict_image
-from tensorflow.keras.models import load_model
-file_id = '14h7yv4LUJuxUF5bwnZ2PIrvoPGQEcnKc'
-url = f'https://drive.google.com/uc?id={file_id}'
-model_path = 'resnet50_model.keras'
+# CNN Model Configuration
+ROOT_DIR = Path(__file__).resolve().parent
+MODELS_DIR = ROOT_DIR / "models"
+MODELS_DIR.mkdir(parents=True, exist_ok=True)
+MODEL_PATH = MODELS_DIR / "resnet50_model.keras"
 
+# Google Drive configuration
+MODEL_FILE_ID = "14h7yv4LUJuxUF5bwnZ2PIrvoPGQEcnKc"
 @st.cache_resource
-def load_my_model():
-    if not os.path.exists(model_path):
-        with st.spinner("Mengunduh model AI."):
-            gdown.download(url, model_path, quiet=False)
-    return load_model(model_path)
+def ensure_model_downloaded():
+    if not MODEL_PATH.exists():
+        with st.spinner("Downloading CNN model from Google Drive..."):
+            result = gdown.download(
+                id=MODEL_FILE_ID,
+                output=str(MODEL_PATH),
+                quiet=False
+            )
+        if result is None or not MODEL_PATH.exists():
+            raise RuntimeError(
+                "Failed to download CNN model from Google Drive."
+            )
+    if MODEL_PATH.stat().st_size == 0:
+        raise RuntimeError("Downloaded CNN model is empty.")
+    return str(MODEL_PATH)
 
-model = load_my_model()
+# Make the model path accessible to vision_model.py
+os.environ["MODEL_PATH"] = ensure_model_downloaded()
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR
